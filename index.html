@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Fresher Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#fff;color:#222}
+    html{scroll-behavior:smooth}
+    a{text-decoration:none;color:inherit}
+
+    .container{display:flex;min-height:100vh}
+
+    /* Sidebar */
+    .sidebar{width:260px;border-right:2px solid #000;padding:30px;position:fixed;height:100vh;background:#fff}
+    .logo{font-size:28px;font-weight:700;margin-bottom:40px}
+    .menu a{display:block;padding:12px 15px;margin-bottom:10px;font-weight:500}
+    .menu a:hover{background:#415a89}
+
+    /* Main */
+    .main{margin-left:260px;flex:1;padding:60px}
+    section{min-height:100vh;padding-top:40px}
+
+    /* Home */
+    .home{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .hero-text{max-width:500px}
+    .hero-text h1{font-size:48px;font-weight:700}
+    .hero-text span{display:block;margin:15px 0;font-weight:300}
+    .hero-text p{color:#555;line-height:1.6}
+
+    .hero-img{position:relative}
+    .hero-img img{width:300px;border:5px solid #000;position:relative;z-index:2}
+    .hero-img::before{content:'';position:absolute;top:20px;left:-20px;width:320px;height:420px;background:#537183;z-index:1}
+
+    /* Common Section */
+    h2{font-size:36px;margin-bottom:20px}
+    .box{max-width:700px;line-height:1.8;color:#555}
+
+    /* Services */
+    .services-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+    .service{border:2px solid #000;padding:20px}
+
+    /* Certificates */
+    .cert{border-bottom:1px solid #ccc;padding:10px 0}
+
+    /* Contact */
+    form{max-width:400px}
+    input,textarea{width:100%;padding:10px;margin:10px 0;border:1px solid #000}
+    button{padding:10px 20px;border:none;background:#44718d;font-weight:600;cursor:pointer}
+
+    /* Responsive */
+    @media(max-width:900px){
+      .sidebar{position:relative;width:100%;height:auto;border-right:none;border-bottom:2px solid #000}
+      .main{margin-left:0;padding:30px}
+      .home{text-align:center;justify-content:center}
+      .hero-img{margin-top:30px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <aside class="sidebar">
+    <div class="logo">REWALL</div>
+    <nav class="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+
+    <section id="home" class="home">
+      <div class="hero-text">
+        <h1>MOUNIKA</h1>
+        <h2>SOFTWARE<br>DEVELOPER</h2>
+        <span>Fresher Software Engineer</span>
+        <p>I am a passionate software engineer who loves building clean, responsive and user‑friendly websites.</p>
+      </div>
+      <div class="hero-img">
+        <img src="C:\Users\localadmin\OneDrive\Pictures\port1.png.jpeg" alt="Profile">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="box">
+        I am a fresher software engineer with strong interest in web development. I have hands‑on experience with HTML, CSS, JavaScript and Python. I enjoy learning new technologies and building real‑world projects.
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="services-list">
+        <div class="service">Responsive Website Design</div>
+        <div class="service">Portfolio Websites</div>
+        <div class="service">Frontend Development</div>
+        <div class="service">Basic Backend (Python)</div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <div class="cert">• Python Programming Certificate</div>
+      <div class="cert">• Web Development Internship</div>
+      <div class="cert">• HTML & CSS Course</div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
