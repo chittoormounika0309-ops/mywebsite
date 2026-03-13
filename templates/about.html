@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<style>
+
+/* Page Background */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f4c75,#00a8a8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* About Section Container */
+.about-container{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    max-width:900px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.about-container h2{
+    color:#0f4c75;
+    margin-bottom:20px;
+}
+
+/* Paragraph styling */
+.about-text p{
+    font-size:16px;
+    line-height:1.7;
+    margin-bottom:15px;
+    color:#333;
+}
+
+/* Stats Section */
+.about-stats{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+/* Individual stat card */
+.stat-box{
+    flex:1;
+    min-width:120px;
+    background:#e6f7f7;
+    border-radius:10px;
+    padding:18px;
+    text-align:center;
+    transition:0.3s;
+}
+
+/* Hover animation */
+.stat-box:hover{
+    background:#00a8a8;
+    color:white;
+    transform:translateY(-5px);
+}
+
+/* Number styling */
+.stat-num{
+    font-size:26px;
+    font-weight:bold;
+    color:#0f4c75;
+}
+
+/* Label styling */
+.stat-label{
+    font-size:14px;
+    margin-top:5px;
+}
+
+.stat-box:hover .stat-num{
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="about-container">
+
+<h2>About Me</h2>
+
+<div class="about-text">
+
+<p>Hi! I'm Mounika, a fresher software engineer with a strong foundation in full-stack web development. I recently graduated with a CS degree and have been actively building real-world projects.</p>
+
+<p>I'm passionate about writing clean, maintainable code and solving complex problems. I thrive in collaborative environments and am eager to contribute to impactful projects.</p>
+
+<p>When I'm not coding, I explore new technologies, contribute to open source, and level up through courses and certifications.</p>
+
+<div class="about-stats">
+
+<div class="stat-box">
+<div class="stat-num">5+</div>
+<div class="stat-label">Projects</div>
+</div>
+
+<div class="stat-box">
+<div class="stat-num">4+</div>
+<div class="stat-label">Certs</div>
+</div>
+
+<div class="stat-box">
+<div class="stat-num">10+</div>
+<div class="stat-label">Tech</div>
+</div>
+
+<div class="stat-box">
+<div class="stat-num">1yr</div>
+<div class="stat-label">Exp</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

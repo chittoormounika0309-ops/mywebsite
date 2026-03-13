@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+
+<style>
+
+/* Page background */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f4c75,#00a8a8);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Main container */
+.resume-container{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    width:900px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+/* Column title */
+.resume-col-title{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:20px;
+    color:#0f4c75;
+}
+
+/* Timeline layout */
+.timeline{
+    position:relative;
+    padding-left:25px;
+}
+
+/* vertical line */
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:7px;
+    top:0;
+    width:2px;
+    height:100%;
+    background:#00a8a8;
+}
+
+/* timeline item */
+.timeline-item{
+    position:relative;
+    margin-bottom:25px;
+}
+
+/* timeline dot */
+.timeline-dot{
+    position:absolute;
+    left:-1px;
+    top:5px;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:#00a8a8;
+}
+
+/* date */
+.timeline-date{
+    font-size:13px;
+    color:#777;
+    margin-bottom:4px;
+}
+
+/* title */
+.timeline-title{
+    font-size:16px;
+    font-weight:bold;
+    color:#0f4c75;
+}
+
+/* subtitle */
+.timeline-sub{
+    font-size:14px;
+    color:#444;
+}
+
+/* description */
+.timeline-desc{
+    font-size:13px;
+    color:#555;
+    margin-top:4px;
+}
+
+/* hover effect */
+.timeline-item:hover .timeline-title{
+    color:#00a8a8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="resume-container">
+
+<!-- Education -->
+
+<div>
+<div class="resume-col-title">🎓 Education</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">2023 — 2027</div>
+<div class="timeline-title">B.Tech — Computer Science</div>
+<div class="timeline-sub">Sri Venkateswara College of Engineering</div>
+<div class="timeline-desc">Studied DSA, OS, DBMS, and web technologies. Graduated with 8.8 CGPA.</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">2021-2023</div>
+<div class="timeline-title">Higher Secondary (12th)</div>
+<div class="timeline-sub">Narayana Junior College — Science Stream</div>
+<div class="timeline-desc">Majored in Math, Physics & CS. Scored 89%.</div>
+</div>
+
+</div>
+</div>
+
+<div>
+<div class="resume-col-title">💼 Experience</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">Jun 2024 — Aug 2024</div>
+<div class="timeline-title">Web Development Intern</div>
+<div class="timeline-sub">TechStart Solutions</div>
+<div class="timeline-desc">Built React UI components, integrated REST APIs, followed Agile methodology.</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

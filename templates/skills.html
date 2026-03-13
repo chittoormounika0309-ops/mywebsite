@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+
+<style>
+
+/* Page background */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f4c75,#00a8a8);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Skills container */
+.skills-container{
+    width:900px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* Skill category card */
+.skill-category{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.skill-category:hover{
+    transform:translateY(-6px);
+}
+
+/* Category title */
+.skill-cat-title{
+    font-size:18px;
+    font-weight:bold;
+    color:#0f4c75;
+    margin-bottom:12px;
+}
+
+/* Skills chips container */
+.skills-chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+/* Individual skill chip */
+.skill-chip{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    background:#e6f7f7;
+    color:#0f4c75;
+    padding:6px 10px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* Icon */
+.si{
+    font-size:16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="skills-container">
+
+<div class="skill-category">
+<div class="skill-cat-title">Frontend</div>
+<div class="skills-chips">
+<div class="skill-chip"><span class="si">⚛️</span>React</div>
+<div class="skill-chip"><span class="si">🟨</span>JavaScript</div>
+<div class="skill-chip"><span class="si">🔷</span>TypeScript</div>
+<div class="skill-chip"><span class="si">🎨</span>HTML / CSS</div>
+<div class="skill-chip"><span class="si">💨</span>Tailwind CSS</div>
+</div>
+</div>
+
+<div class="skill-category">
+<div class="skill-cat-title">Backend</div>
+<div class="skills-chips">
+<div class="skill-chip"><span class="si">🟢</span>Node.js</div>
+<div class="skill-chip"><span class="si">🐍</span>Python</div>
+<div class="skill-chip"><span class="si">☕</span>Java</div>
+<div class="skill-chip"><span class="si">🚂</span>Express.js</div>
+</div>
+</div>
+
+<div class="skill-category">
+<div class="skill-cat-title">Database & DevOps</div>
+<div class="skills-chips">
+<div class="skill-chip"><span class="si">🗄️</span>MySQL</div>
+<div class="skill-chip"><span class="si">🍃</span>MongoDB</div>
+<div class="skill-chip"><span class="si">🐙</span>Git / GitHub</div>
+<div class="skill-chip"><span class="si">🐳</span>Docker</div>
+<div class="skill-chip"><span class="si">☁️</span>AWS</div>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<style>
+
+/* Page Background */
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f4c75,#00a8a8);
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Contact Container */
+.contact-container{
+    display:flex;
+    gap:40px;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    width:900px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Contact Links */
+.contact-links{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.c-link{
+    text-decoration:none;
+    color:#0f4c75;
+    font-weight:500;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.c-link-icon{
+    font-size:18px;
+}
+
+/* Form */
+.contact-form{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form label{
+    font-size:14px;
+    font-weight:bold;
+    color:#0f4c75;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #cce7e7;
+}
+
+.contact-form textarea{
+    height:100px;
+}
+
+/* Button */
+.btn-send{
+    background:#00a8a8;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.btn-send:hover{
+    background:#0f4c75;
+}
+
+</style>
+</head>
+
+<body>
+
+<form method="POST" action="/contact">
+
+<div class="contact-container">
+
+<div>
+<div class="contact-links">
+<a href="mailto:chittoormounikaa@gmail.com" class="c-link"><span class="c-link-icon">✉️</span> chittoormounikaa@gmail.com</a>
+<a href="#" class="c-link"><span class="c-link-icon">💼</span> linkedin.com/in/alexsmith</a>
+<a href="https://github.com/chittoormounika0309-ops" class="c-link"><span class="c-link-icon">🐙</span> github.com/Mounika</a>
+<a href="#" class="c-link"><span class="c-link-icon">📍</span> Tirupati, India</a>
+</div>
+</div>
+
+<div class="contact-form">
+
+<div>
+<label>Your Name</label>
+<input type="text" name="name" placeholder="John Doe" required>
+</div>
+
+<div>
+<label>Email Address</label>
+<input type="email" name="email" placeholder="john@example.com" required>
+</div>
+
+<div>
+<label>Subject</label>
+<input type="text" name="subject" placeholder="Job Opportunity / Collaboration">
+</div>
+
+<div>
+<label>Message</label>
+<textarea name="message" placeholder="Hi Mounika, I'd love to connect..."></textarea>
+</div>
+
+<button type="submit" class="btn-send">Send Message →</button>
+
+</div>
+
+</div>
+
+</form>
+
+</body>
+</html>

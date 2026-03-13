@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+
+<style>
+
+/* Page background */
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f4c75,#00a8a8);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Portfolio container */
+.port-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    width:900px;
+}
+
+/* Card */
+.port-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.port-card:hover{
+    transform:translateY(-8px);
+}
+
+/* Banner */
+.port-banner{
+    height:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    color:white;
+}
+
+/* Different banner colors */
+.pb1{background:#0f4c75;}
+.pb2{background:#00a8a8;}
+.pb3{background:#007ea7;}
+
+/* Card body */
+.port-body{
+    padding:18px;
+}
+
+/* Tags */
+.port-tags{
+    margin-bottom:10px;
+}
+
+.port-tag{
+    background:#e6f7f7;
+    color:#0f4c75;
+    font-size:12px;
+    padding:4px 8px;
+    border-radius:5px;
+    margin-right:5px;
+}
+
+/* Title */
+.port-title{
+    font-size:18px;
+    font-weight:bold;
+    margin:8px 0;
+    color:#0f4c75;
+}
+
+/* Description */
+.port-desc{
+    font-size:14px;
+    color:#555;
+}
+
+/* Links */
+.port-links{
+    margin-top:12px;
+}
+
+.port-link{
+    text-decoration:none;
+    font-size:14px;
+    margin-right:12px;
+    color:#00a8a8;
+    font-weight:bold;
+}
+
+.port-link:hover{
+    color:#0f4c75;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="port-container">
+
+<div class="port-card">
+<div class="port-banner pb1">🛒</div>
+<div class="port-body">
+<div class="port-tags">
+<span class="port-tag">React</span>
+<span class="port-tag">Node.js</span>
+<span class="port-tag">MongoDB</span>
+</div>
+<div class="port-title">E-Commerce Platform</div>
+<p class="port-desc">Full-stack shop with cart, auth, and payment integration.</p>
+<div class="port-links">
+<a href="#" class="port-link">↗ Live Demo</a>
+<a href="#" class="port-link">⌥ GitHub</a>
+</div>
+</div>
+</div>
+
+<div class="port-card">
+<div class="port-banner pb2">📋</div>
+<div class="port-body">
+<div class="port-tags">
+<span class="port-tag">Python</span>
+<span class="port-tag">Flask</span>
+<span class="port-tag">MySQL</span>
+</div>
+<div class="port-title">Task Manager App</div>
+<p class="port-desc">Productivity tool with priority levels and team collaboration.</p>
+<div class="port-links">
+<a href="#" class="port-link">↗ Live Demo</a>
+<a href="#" class="port-link">⌥ GitHub</a>
+</div>
+</div>
+</div>
+
+<div class="port-card">
+<div class="port-banner pb3">🌦️</div>
+<div class="port-body">
+<div class="port-tags">
+<span class="port-tag">JavaScript</span>
+<span class="port-tag">API</span>
+<span class="port-tag">CSS</span>
+</div>
+<div class="port-title">Weather Dashboard</div>
+<p class="port-desc">Real-time weather app with animated UI and 5-day forecast.</p>
+<div class="port-links">
+<a href="#" class="port-link">↗ Live Demo</a>
+<a href="#" class="port-link">⌥ GitHub</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
