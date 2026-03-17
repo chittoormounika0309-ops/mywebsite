@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f9fc;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 15px auto;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .delete-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .delete-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Admin Panel</h1>
+
+{% for row in data %}
+
+<div class="card">
+    <p><strong>Name:</strong> {{ row[1] }}</p>
+    <p><strong>Email:</strong> {{ row[2] }}</p>
+    <p><strong>Subject:</strong> {{ row[3] }}</p>
+    <p><strong>Message:</strong> {{ row[4] }}</p>
+
+    <form action="/delete/{{ row[0] }}" method="POST">
+        <button class="delete-btn">Delete</button>
+    </form>
+</div>
+
+{% endfor %}
+
+</body>
+</html>

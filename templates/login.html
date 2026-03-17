@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+
+    <style>
+        /* ===== BACKGROUND ===== */
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0ea5a4, #0284c7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ===== LOGIN BOX ===== */
+        .login-container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 300px;
+            color: white;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        /* ===== INPUTS ===== */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input:focus {
+            box-shadow: 0 0 5px #38bdf8;
+        }
+
+        /* ===== BUTTON ===== */
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #f6f8f8, #f6f7f7);
+            border: none;
+            border-radius: 10px;
+            color: rgb(11, 11, 11);
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* ===== ERROR MESSAGE ===== */
+        .error {
+            color: #fecaca;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="login-container">
+    <h2>Admin Login</h2>
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Optional error message -->
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+</div>
+
+</body>
+</html>

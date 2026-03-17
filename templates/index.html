@@ -79,7 +79,7 @@
   .btn-outline { background: transparent; color: var(--blue); font-size: 0.78rem; font-weight: 600; padding: 10px 26px; border: 1.5px solid rgba(0,119,182,0.35); border-radius: 8px; cursor: pointer; text-decoration: none; transition: all 0.2s; }
   .btn-outline:hover { background: var(--hover); border-color: var(--blue); transform: translateY(-2px); }
 
-  .about-grid { display: grid; grid-template-columns: 200px 1fr; gap: 44px; align-items: start; }
+  .about-grid { display: grid; grid-template-columns: 300px 1fr; gap: 44px; align-items: start; }
   .about-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 22px 18px; text-align: center; box-shadow: var(--shadow); }
   .about-avatar { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--blue), var(--teal)); display: flex; align-items: center; justify-content: center; font-size: 2.2rem; margin: 0 auto 12px; border: 2px solid #fff; box-shadow: 0 0 0 3px var(--teal2); }
   .about-card-name { font-weight: 700; font-size: 0.9rem; margin-bottom: 3px; }
@@ -111,7 +111,7 @@
   .skill-chip:hover { border-color: var(--blue); background: rgba(0,119,182,0.05); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,119,182,0.14); color: var(--blue); }
   .skill-chip .si { font-size: 1rem; }
 
-  .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr)); gap: 16px; }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap: 16px; }
   .service-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px 20px; transition: all 0.25s; position: relative; overflow: hidden; box-shadow: var(--shadow); }
   .service-card:hover { border-color: var(--blue); transform: translateY(-4px); box-shadow: 0 10px 28px rgba(0,119,182,0.14); }
   .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--blue), var(--teal)); opacity: 0; transition: opacity 0.25s; }
@@ -120,7 +120,7 @@
   .service-title { font-size: 0.9rem; font-weight: 700; margin-bottom: 7px; }
   .service-desc { font-size: 0.77rem; color: var(--muted); line-height: 1.75; }
 
-  .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px,1fr)); gap: 16px; }
+  .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap: 16px; }
   .port-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.25s; box-shadow: var(--shadow); }
   .port-card:hover { border-color: var(--blue); transform: translateY(-4px); box-shadow: 0 10px 28px rgba(0,119,182,0.14); }
   .port-banner { height: 140px; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; }
@@ -136,7 +136,7 @@
   .port-link { font-size: 0.72rem; color: var(--blue); text-decoration: none; font-weight: 600; transition: opacity 0.2s; font-family: 'DM Mono', monospace; }
   .port-link:hover { opacity: 0.65; }
 
-  .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 14px; }
+  .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap: 14px; }
   .cert-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px 16px; display: flex; gap: 13px; align-items: flex-start; transition: all 0.25s; box-shadow: var(--shadow); }
   .cert-card:hover { border-color: var(--teal); transform: translateY(-3px); box-shadow: 0 8px 22px rgba(0,180,216,0.16); }
   .cert-ico { width: 40px; height: 40px; flex-shrink: 0; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; background: linear-gradient(135deg, rgba(0,119,182,0.1), rgba(0,180,216,0.1)); border: 1px solid rgba(0,119,182,0.15); }
@@ -173,6 +173,102 @@
     .section { padding: 40px 20px; }
     .about-grid, .resume-grid, .contact-grid { grid-template-columns: 1fr; }
   }
+.service-card,
+.port-card,
+.cert-card,
+.skill-chip,
+.stat-box,
+.about-card {
+  transition: all 0.35s ease;
+}
+
+.service-card:hover,
+.port-card:hover,
+.cert-card:hover,
+.skill-chip:hover,
+.stat-box:hover,
+.about-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,119,182,0.18);
+}
+.btn-primary,
+.btn-outline,
+.btn-send {
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: var(--blue2);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 10px 26px rgba(0,119,182,0.45);
+}
+
+.btn-outline:hover {
+  transform: translateY(-3px) scale(1.04);
+  background: rgba(0,119,182,0.08);
+}
+.btn-send:hover {
+  transform: translateY(-3px) scale(1.04);
+}
+.nav-item {
+  transition: all 0.2s ease;
+}
+.nav-item:hover {
+  transform: translateX(6px);
+}
+.port-link,
+.c-link,
+.social-icon {
+  transition: all 0.25s ease;
+}
+.port-link:hover,
+.c-link:hover {
+  transform: translateX(4px);
+}
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.08);
+}
+.fi {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fi.vis {
+  opacity: 1;
+  transform: translateY(0);
+}
+.btn{
+  display:inline-block;
+  padding:10px 20px;
+  background:#0077b6;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+}
+.sidebar-footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.admin-btn {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0ea5a4, #0284c7);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 </style>
 </head>
 <body>
@@ -196,9 +292,14 @@
     <div class="nav-item has-dropdown" onclick="toggleDrop(this)"><span class="nav-icon">📂</span> More<span class="nav-arrow">›</span></div>
     <div class="nav-sub" id="drop-sub"><a href="#skills">Skills</a><a href="#certificates">Certificates</a></div>
     <a href="#contact" class="nav-item" onclick="setActive(this)"><span class="nav-icon">✉️</span> Contact</a>
-  </nav>
+    </nav>
   <div class="sidebar-divider"></div>
   <div class="sidebar-footer"><span class="status-dot"></span> Available for Work</div>
+  <div class="sidebar-footer">
+    <a href="/login">
+        <button class="admin-btn">⚙️ Admin</button>
+    </a>
+</div>
 </aside>
 <main class="main">
   <section class="section" id="home" style="min-height:100vh;display:flex;align-items:center;">
@@ -225,7 +326,7 @@
         <div class="about-card-name">Mounika</div>
         <div class="about-card-role">Software Engineer</div>
         <div class="about-card-info">📍 <span>Tirupati, India</span><br/>🎓 <span>B.Tech CS</span><br/>📧 <span>chittoormounikaa@gmail.com</span><br/>🟢 Status: <span style="color:#10b981">Available</span></div>
-        <a href="/about">Know More</a>
+        <a href="/about" class="btn">Know More</a>
       </div>
       </div>
     </div>
@@ -235,7 +336,7 @@
     <h2 class="sec-title fi">Education & <span>Experience</span></h2>
     <div class="sec-line fi"></div>
     <div class="resume-grid fi">
-        <a href="/resume">Resume</a>
+        <a href="/resume" class="btn">Resume</a>
     </div>
   </section>
   <section class="section" id="skills">
@@ -243,7 +344,7 @@
     <h2 class="sec-title fi">Tech <span>Stack</span></h2>
     <div class="sec-line fi"></div>
     <div class="skills-cats fi">
-      <a href="/skills">My skills</a>
+      <a href="/skills" class="btn">My skills</a>
     </div>
   </section>
   <section class="section alt-bg" id="services">
@@ -251,7 +352,7 @@
     <h2 class="sec-title fi">What I <span>Offer</span></h2>
     <div class="sec-line fi"></div>
     <div class="services-grid fi">
-      <a href="/service">My services</a>
+      <a href="/service" class="btn">My services</a>
     </div>
   </section>
   <section class="section" id="portfolio">
@@ -259,7 +360,7 @@
     <h2 class="sec-title fi">Featured <span>Projects</span></h2>
     <div class="sec-line fi"></div>
     <div class="portfolio-grid fi">
-     <a href="/project">my projects</a>
+     <a href="/project" class="btn">My projects</a>
     </div>
   </section>
   <section class="section alt-bg" id="certificates">
@@ -267,7 +368,7 @@
     <h2 class="sec-title fi">My <span>Credentials</span></h2>
     <div class="sec-line fi"></div>
     <div class="cert-grid fi">
-      <a href="/certificates">My certificates</a>
+      <a href="/certificates" class="btn">My certificates</a>
     </div>
   </section>
   <section class="section" id="contact">
@@ -282,7 +383,7 @@
           <a href="#" class="c-link"><span class="c-link-icon">💼</span> linkedin.com/in/alexsmith</a>
           <a href="https://github.com/chittoormounika0309-ops" class="c-link"><span class="c-link-icon">🐙</span> github.com/Mounika</a>
           <a href="#" class="c-link"><span class="c-link-icon">📍</span> Tirupati, India</a>
-          <a href="/contact">Contact</a>
+          <a href="/contact" class="btn">Contact me</a>
         </div>
       </div>
     </div>
