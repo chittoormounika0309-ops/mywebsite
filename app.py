@@ -185,6 +185,29 @@ def logout():
     session.pop("admin", None)
     return redirect("/login")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/certificates")
+def certificate():
+    return render_template("certificates.html")
+
+@app.route("/projects")
+def projects():
+    return render_template("projects.html")
+
+@app.route("/resume")
+def resume():
+    return render_template("resume.html")
+
+@app.route("/service")
+def service():
+    return render_template("service.html")
+
+@app.route("/skills")
+def skills():
+    return render_template("skills.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
